@@ -1,0 +1,12 @@
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+.btns{
+    height: 40px;
+    width: 45px;
+}

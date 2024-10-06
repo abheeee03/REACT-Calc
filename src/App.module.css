@@ -1,0 +1,20 @@
+.Cont{
+    height: 400px;
+    width: 395px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 20px;
+    border: 2px solid black;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+.head{
+    text-align: center;
+    margin-top: 165px;
+}
