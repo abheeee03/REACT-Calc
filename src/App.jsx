@@ -1,29 +1,27 @@
 import React, { useState } from "react";
+import List from "./Components/List";
 import Display from "./Components/Display";
-import BtnContainer from "./Components/BtnContainer";
 import Styles from "./App.module.css";
 
 const App = () => {
-  const [Number, setNumber] = useState("");
-  const onbtnClick = (btnName) => {
+  const [CalcValue, setCalcValue] = useState([""]);
+  const getbtn = (btnName) => {
     if (btnName == "C") {
-      setNumber("");
+      setCalcValue([""]);
     } else if (btnName == "Ans") {
-      const res = eval(Number);
-      setNumber(res);
+      const result = eval(CalcValue);
+      setCalcValue(result);
     } else {
-      const newDisplayValue = Number + btnName;
-      setNumber(newDisplayValue);
+      const newValue = CalcValue + btnName;
+      setCalcValue(newValue);
     }
   };
   return (
-    <>
-      <h1 className={Styles.head}>Calculator</h1>
-      <div className={Styles.Cont}>
-        <Display Number={Number} />
-        <BtnContainer onbtnClick={onbtnClick} />
-      </div>
-    </>
+    <div className={Styles.Container}>
+      <h1>CALCULATOR</h1>
+      <Display value={CalcValue} />
+      <List getbtn={getbtn} />
+    </div>
   );
 };
 

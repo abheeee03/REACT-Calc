@@ -1,8 +1,8 @@
 import React from "react";
-import Styles from "./BtnContainer.module.css";
+import Styles from "./List.module.css";
 
-const BtnContainer = ({ onbtnClick }) => {
-  const btns = [
+const List = ({ getbtn }) => {
+  let btns = [
     "C",
     "1",
     "2",
@@ -22,12 +22,12 @@ const BtnContainer = ({ onbtnClick }) => {
   ];
 
   return (
-    <div className={Styles.Container}>
+    <div className={Styles.btnCont}>
       {btns.map((btnName, key) => (
         <button
           key={key}
-          className={Styles.btns}
-          onClick={() => onbtnClick(btnName)}
+          className={`btn btn-light`}
+          onClick={() => getbtn(btnName)}
         >
           {btnName}
         </button>
@@ -36,4 +36,4 @@ const BtnContainer = ({ onbtnClick }) => {
   );
 };
 
-export default BtnContainer;
+export default List;

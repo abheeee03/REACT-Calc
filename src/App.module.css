@@ -1,20 +1,16 @@
-.Cont{
-    height: 400px;
-    width: 395px;
-    background-color: rgb(192, 192, 192);
-    border-radius: 20px;
-    border: 2px solid black;
+.Container{
+    background-color: rgb(251, 251, 251);
     position: absolute;
-    transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
     display: flex;
-    gap: 40px;
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
     justify-content: center;
-}   
-.head{
-    text-align: center;
-    margin-top: 165px;
+    align-items: center;
 }

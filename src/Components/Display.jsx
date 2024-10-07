@@ -1,9 +1,9 @@
 import React from "react";
 
-const Display = ({ Number }) => {
+const Display = ({ value }) => {
   return (
     <div>
-      <input type="text" value={Number} readOnly />
+      <input type="text" value={value} readOnly />
     </div>
   );
 };
