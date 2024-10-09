@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import List from "./Components/List";
+import Buttons from "./Components/Buttons";
 import Display from "./Components/Display";
 import Styles from "./App.module.css";
 
@@ -20,7 +20,7 @@ const App = () => {
     <div className={Styles.Container}>
       <h1>CALCULATOR</h1>
       <Display value={CalcValue} />
-      <List getbtn={getbtn} />
+      <Buttons getbtn={getbtn} />
     </div>
   );
 };

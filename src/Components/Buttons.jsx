@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./List.module.css";
+import Styles from "./Buttons.module.css";
 
 const List = ({ getbtn }) => {
   let btns = [
